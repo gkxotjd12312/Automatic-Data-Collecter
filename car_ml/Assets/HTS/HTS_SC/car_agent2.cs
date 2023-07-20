@@ -9,39 +9,18 @@ using System.Text;
 
 public class car_agent2 : Agent
 {
-
-    private string filename = "./image_F/image/";
-    private int filenumber = 1;
-    private bool camera_on = false;
-    float captureInterval = 0.1f;
-    float timer = 0f;
-
-    string filePath = "./Image_F/df.csv";
-    StringBuilder sb = new StringBuilder();
-    float csv_car_angle;
-
-    int speed_value = 0;
     private float maxpower = 5f;
-    private float power = 1250f;
-    private float rot = 20f;
     private int car_speed = 1;
     private Rigidbody rb;
 
-    private Vector3 wheel_position;
-    private Quaternion wheel_rotation;
-
     [SerializeField]
     private TrafficManager traffic_number;
-    int traffic_number_send=0;
 
 
 
     private void Start()
     {
-        if (!File.Exists(filePath))
-        {
-            sb.AppendLine("image_name,drive_mod,speed,angle");
-        }
+
         rb = this.GetComponent<Rigidbody>();
         rb.centerOfMass = new Vector3(0, 0, 0);
     }
@@ -66,7 +45,6 @@ public class car_agent2 : Agent
     public override void OnActionReceived(ActionBuffers actions)
     {
         var car_angle = Mathf.Floor(actions.ContinuousActions[0]*10) / 10;
-        csv_car_angle = Mathf.Floor((car_angle+1)/2 *10f)/10f;
 
         if (car_speed == 0)
         {
@@ -74,8 +52,8 @@ public class car_agent2 : Agent
         }
         if (car_speed == 1)
         {
-            rb.AddForce(transform.forward * 15);
-            transform.Rotate(0, car_angle * 0.8f, 0);
+            rb.AddForce(transform.forward * 30);
+            transform.Rotate(0, car_angle * 0.9f, 0);
         }
 
         if (rb.velocity.magnitude >= maxpower / 5)

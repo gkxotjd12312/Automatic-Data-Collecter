@@ -24,7 +24,6 @@ public class car_agent1 : Agent
     StringBuilder sb = new StringBuilder();
     float csv_car_angle;
 
-    int speed_value = 0;
     private float maxpower = 5f;
     private float power = 1250f;
     private float rot = 20f;
