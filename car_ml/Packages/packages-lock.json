@@ -88,7 +88,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ml-agents": {
-      "version": "file:C:/Users/HTS/Desktop/git_F/ml-agents-release_17/com.unity.ml-agents",
+      "version": "file:C:/github/car_ml-agent/ml-agents-release_17/com.unity.ml-agents",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -98,7 +98,7 @@
       }
     },
     "com.unity.ml-agents.extensions": {
-      "version": "file:C:/Users/HTS/Desktop/git_F/ml-agents-release_17/com.unity.ml-agents.extensions",
+      "version": "file:C:/github/car_ml-agent/ml-agents-release_17/com.unity.ml-agents.extensions",
       "depth": 0,
       "source": "local",
       "dependencies": {
