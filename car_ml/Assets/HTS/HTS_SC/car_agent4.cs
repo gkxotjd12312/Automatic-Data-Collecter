@@ -18,10 +18,6 @@ public class car_agent4 : Agent
 
     [SerializeField]
     private TrafficManager traffic_number;
-
-    private int endCount = 0;
-    private int punishCount = 0;
-
     private void Start()
     {
         start_position = transform.localPosition;
@@ -105,14 +101,6 @@ public class car_agent4 : Agent
         if (other.gameObject.CompareTag("lightCross") && traffic_number.light_signal == 0)
         {
             car_speed = 0;
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("floor"))
-        {
-            endCount = 0;
         }
     }
 
