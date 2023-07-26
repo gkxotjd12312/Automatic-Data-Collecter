@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 using System.IO;
 using System.Text;
 
-public class car_agent2 : Agent
+public class car_agent4 : Agent
 {
     private float maxpower = 5f;
     private int car_speed = 1;
@@ -19,7 +19,8 @@ public class car_agent2 : Agent
     [SerializeField]
     private TrafficManager traffic_number;
 
-
+    private int endCount = 0;
+    private int punishCount = 0;
 
     private void Start()
     {
@@ -51,11 +52,20 @@ public class car_agent2 : Agent
     {
         var car_angle = Mathf.Floor(actions.ContinuousActions[0]*10) / 10;
 
-        AddReward(0.5f);
-        if (car_angle<1 && car_angle>-1)
+        AddReward(1.0f);
+        if (car_angle<3 && car_angle>-3)
         {
-            AddReward(0.05f);
+            AddReward(0.01f);
+            if (car_angle < 2 && car_angle > -2)
+            {
+                AddReward(0.01f);
+                if (car_angle < 1 && car_angle > -1)
+                {
+                    AddReward(0.01f);
+                }
+            }
         }
+
         if (car_speed == 0)
         {
             rb.velocity = Vector3.zero;
@@ -73,30 +83,36 @@ public class car_agent2 : Agent
                 rb.velocity = rb.velocity.normalized * maxpower;
             }
         }
-        
-        
 
     }
     private void OnCollisionEnter(Collision other)
     {
-
         if (other.gameObject.CompareTag("floor"))
         {
-            AddReward(-300f);
+            AddReward(-500f);
             EndEpisode();
+
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.CompareTag("floor"))
+        {
+            AddReward(-500f);
+            EndEpisode();
+        }    
         if (other.gameObject.CompareTag("lightCross") && traffic_number.light_signal == 0)
         {
             car_speed = 0;
         }
-        if (other.gameObject.CompareTag("block"))
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("floor"))
         {
-            AddReward(-90f);
-            EndEpisode();
+            endCount = 0;
         }
     }
 

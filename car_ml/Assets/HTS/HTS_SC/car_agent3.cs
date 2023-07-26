@@ -7,7 +7,7 @@ using Unity.MLAgents.Sensors;
 using System.IO;
 using System.Text;
 
-public class car_agent2 : Agent
+public class car_agent3 : Agent
 {
     private float maxpower = 5f;
     private int car_speed = 1;
@@ -19,7 +19,8 @@ public class car_agent2 : Agent
     [SerializeField]
     private TrafficManager traffic_number;
 
-
+    private int endCount = 0;
+    private int punishCount = 0;
 
     private void Start()
     {
@@ -54,8 +55,9 @@ public class car_agent2 : Agent
         AddReward(0.5f);
         if (car_angle<1 && car_angle>-1)
         {
-            AddReward(0.05f);
+            AddReward(0.01f);
         }
+
         if (car_speed == 0)
         {
             rb.velocity = Vector3.zero;
@@ -73,8 +75,6 @@ public class car_agent2 : Agent
                 rb.velocity = rb.velocity.normalized * maxpower;
             }
         }
-        
-        
 
     }
     private void OnCollisionEnter(Collision other)
@@ -82,8 +82,14 @@ public class car_agent2 : Agent
 
         if (other.gameObject.CompareTag("floor"))
         {
-            AddReward(-300f);
-            EndEpisode();
+            AddReward(-10f);
+            punishCount++;
+
+            if (punishCount >= 3)
+            {
+                AddReward(-300f);
+                EndEpisode();
+            }
         }
     }
 
@@ -95,8 +101,30 @@ public class car_agent2 : Agent
         }
         if (other.gameObject.CompareTag("block"))
         {
-            AddReward(-90f);
+            AddReward(-300f);
             EndEpisode();
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("floor"))
+        {
+            endCount++;
+            AddReward(-1f);
+
+            if(endCount >= 30)
+            {
+                EndEpisode();
+            }
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("floor"))
+        {
+            endCount = 0;
         }
     }
 
