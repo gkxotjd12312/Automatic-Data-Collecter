@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 345598077}
   - component: {fileID: 345598076}
   - component: {fileID: 345598075}
-  - component: {fileID: 345598074}
+  - component: {fileID: 345598078}
   - component: {fileID: 345598073}
   m_Layer: 20
   m_Name: Car
@@ -1472,23 +1472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 1
   TakeActionsBetweenDecisions: 1
---- !u!114 &345598074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345598071}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cafbc34a3896042479e6ace4c7cccbac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 50000
-  traffic_number: {fileID: 725895445}
 --- !u!114 &345598075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,6 +1531,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &345598078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345598071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d455fac357875f842a2db60ff8d021da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 50000
+  traffic_number: {fileID: 725895445}
 --- !u!1 &367272993
 GameObject:
   m_ObjectHideFlags: 0

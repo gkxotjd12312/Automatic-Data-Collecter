@@ -53,9 +53,9 @@ public class floor_create : MonoBehaviour
 
         void build_def()
         {
-            for (int i = (int)(-((transform.localScale.x / 2) * 10 - 10) + transform.position.x); i < (int)(((transform.localScale.x / 2) * 10) + transform.position.x - obj_size / 2); i += obj_size)
+            for (int i = (int)(-((transform.localScale.x / 2) * 10) + transform.position.x+8); i < (int)(((transform.localScale.x / 2) * 10) + transform.position.x - obj_size / 2); i += obj_size)
             {
-                for (int j = (int)(-((transform.localScale.z / 2) * 10 - 10) + transform.position.z); j < (int)(((transform.localScale.z / 2) * 10) + transform.position.z - obj_size / 2); j += obj_size)
+                for (int j = (int)(-((transform.localScale.z / 2) * 10) + transform.position.z+8); j < (int)(((transform.localScale.z / 2) * 10) + transform.position.z - obj_size / 2); j += obj_size)
                 {
                     noise_number = Random.Range(-2, 2);
                     obj_number = Random.Range(0, obj_prefabs.Length);
@@ -66,13 +66,13 @@ public class floor_create : MonoBehaviour
         }
         void forest_def()
         {
-            for (int i = (int)(-((transform.localScale.x / 2) * 10) + transform.position.x); i < (int)(((transform.localScale.x / 2) * 10) + transform.position.x ); i += obj_size)
+            for (int i = (int)(-((transform.localScale.x / 2) * 10) + transform.position.x+2); i < (int)(((transform.localScale.x / 2) * 10) + transform.position.x ); i += obj_size)
             {
-                for (int j = (int)(-((transform.localScale.z / 2) * 10 ) + transform.position.z); j < (int)(((transform.localScale.z / 2) * 10) + transform.position.z); j += obj_size)
+                for (int j = (int)(-((transform.localScale.z / 2) * 10 ) + transform.position.z+2); j < (int)(((transform.localScale.z / 2) * 10) + transform.position.z); j += obj_size)
                 {
-                    noise_number = Random.Range(-2, 2);
+                    noise_number = Random.Range(-1, 1);
                     obj_number = Random.Range(0, obj_prefabs.Length);
-                    GameObject temp = Instantiate(obj_prefabs[obj_number], new Vector3(i + noise_number, 0, j + noise_number), Quaternion.identity) as GameObject;
+                    GameObject temp = Instantiate(obj_prefabs[obj_number], new Vector3(i+noise_number, 0, j+noise_number), Quaternion.identity) as GameObject;
                     spawnedObjects.Add(temp);
                 }
             }
