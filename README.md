@@ -1,5 +1,3 @@
-# ADC(Automatic Data Collector)
-# 자율주행 # 강화학습 # 유니티 # 가상 데이터 수집 # 차량전방이미지, Lidar, Segmentation # 
-
-#### 저랑 후배가 만든 작품으로 가상데이터를 수집하는 소프트웨어입니다.
-#### 실제로 이것으로 실제 모델의 성능을 향상시켜보았습니다.
+version https://git-lfs.github.com/spec/v1
+oid sha256:7146742f90b4211f4ed0a023bda21601b6d5a5392aa6e0b6b93704da00627be9
+size 333
