@@ -1,0 +1,4 @@
+ADC_final_version filter=lfs diff=lfs merge=lfs -text
+Automatic[[:space:]]Data[[:space:]]Collector filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+car_ml_hts_old_version filter=lfs diff=lfs merge=lfs -text
