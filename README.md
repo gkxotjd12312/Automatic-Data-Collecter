@@ -24,5 +24,6 @@
 
 # 🎥지금부터 설명을 시작하겠습니다.
 
-![슬라이드1](https://github.com/gkxotjd12312/unitiy_Genetic_A_Car/assets/54784059/4f064b59-1054-4e33-b1a1-9647dfe1e0ce)
- - 자율주행 모델을 만들기 위한 
+![슬라이드1](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/7680f4aa-2c8d-43dd-bf4d-bfbc3d690c45)
+
+
