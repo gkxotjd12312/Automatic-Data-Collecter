@@ -100,6 +100,6 @@
  - 두 번째로 Pilot_Net테스트 결과 실제데이터에 가상 데이터를 합친 합성 데이터가 약 30%낮은 Loss를 보여주어 저희 ADC의 성능의 우수성을 보여주었습니다.
 
 ![슬라이드19](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/2544e52b-564a-47e4-b7bc-1550773ce36e)
- - 이상 시연영상을 마무리로 발표를 마치도록하겠습니다. 
+ - 시연영상은 github동영상 길이때문에 못올리는 죄송합니다. 혹시 궁금하신분은 연락주시면 보내드리도록 하겠습니다. 감사합니다.
 
 ![슬라이드20](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/368f6d6d-f689-44cc-b2ac-88a6bb0a306d)
