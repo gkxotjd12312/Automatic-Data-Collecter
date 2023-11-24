@@ -25,9 +25,13 @@
 # 🎥지금부터 설명을 시작하겠습니다.
 
 ![슬라이드1](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/7680f4aa-2c8d-43dd-bf4d-bfbc3d690c45)
+
 ![슬라이드2](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/760fd190-1e17-46cc-9053-0981dc8718c7)
+
 ![슬라이드3](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/877fbe9b-028a-4cc5-8a3d-2f1544e80d9d)
+
 ![슬라이드4](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/86888e59-8159-4426-a0b0-50e647d1883c)
+
 ![슬라이드5](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/bb448a40-b108-4ae8-b83f-7844831dc6c9)
 ![슬라이드6](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/12a17a25-8057-4fe8-835a-4f7c5006961e)
 ![슬라이드7](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/ca61abe3-10a4-4e5e-8fd1-b1aae122dbea)
