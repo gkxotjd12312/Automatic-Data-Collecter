@@ -46,5 +46,20 @@
 
 ![슬라이드11](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/d62b9037-26fc-4417-b82e-967ab20e036e)
 
+![슬라이드12](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/4d0fc01f-739e-4393-a0eb-acb47fdb4d47)
 
+![슬라이드13](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/9da5d938-6515-444d-80dc-25898d4b7d12)
 
+![슬라이드14](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/17c0b318-a988-4d3c-981f-509f57bf6b77)
+
+![슬라이드15](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/f17f5539-d1d8-4f4a-93e1-e19a5b0076a7)
+
+![슬라이드16](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/b4b54a02-5545-44d2-b076-779f05df057c)
+
+![슬라이드17](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/3ebf767d-6bdc-43fd-aa46-dd9e46bef80e)
+
+![슬라이드18](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/b2c6d3cd-b780-4e12-b8e0-6efe228a7249)
+
+![슬라이드19](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/2544e52b-564a-47e4-b7bc-1550773ce36e)
+
+![슬라이드20](https://github.com/gkxotjd12312/Automatic-Data-Collecter/assets/54784059/368f6d6d-f689-44cc-b2ac-88a6bb0a306d)
