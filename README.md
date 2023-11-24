@@ -1,13 +1,28 @@
-# Revenge_of_Cactus
-#운동 게임, #동작 인식, #Unity3D 
-
-#### 저포함 3명에서 제작한 게임입니다. 
-#### 2년전 졸업하기 전에 모여서 만든 게임인데 시간이 지나서 올릴려고 보니깐 어디가 문제인지 작동이 잘 안되네요 ㅠ
+# Automatic-Data-Collecter
+# 자율주행 #인공지능 # 가상 데이터 # 가상 공간 # 3D유니티 #PPO알고리즘  
 
 
-[다운로드링크]
-- [https://docs.google.com/presentation/d/1LRyYfRBsx-wAGVpBOxhNQFC0TttdBojk/edit?usp=drive_link&ouid=100742902694856536039&rtpof=true&sd=true](https://drive.google.com/file/d/1uZhBn9eP73mSkDQqoXCqZHFa4jIUlaWF/view?usp=sharing)https://drive.google.com/file/d/1uZhBn9eP73mSkDQqoXCqZHFa4jIUlaWF/view?usp=sharing
+## 📜 프로젝트 소개 
+ - 자율 주행 모델 개발 시, 개발자들은 종종 가상 데이터를 활용합니다. 하지만 이 데이터는 그들의 차량이나 다른 환경과 일치하지 않을때도 있지만, 프로그램의 제한으로 인해 수정이 어려워 대부분 그대로 사용하게 됩니다.
+ - 이러한 문제를 해결하기 위해 Automatic-Data-Collecter(ADC)를 개발하였습니다.
+ - 이 SW는 사용자가 자신의 차량에 맞게 환경을 쉽게 조정할 수 있도록 설계되었으며, 전방 이미지, 라이다 센서 데이터, 세그멘테이션 정보 등을 자동으로 수집하여 제공합니다.
 
-[발표PPT]
+## ⌚ 개발 기간
+* 2023.09 ~2023.10
 
-![최종발표_1](https://github.com/gkxotjd12312/Revenge_of_Cactus/assets/54784059/12061b8e-77b4-48ba-a919-59c23325f257)
+## 👨🏿‍🤝‍👨🏿 제작 맴버
+ - 하태성 : 가상 공간 제작, 자율주행 차량 제작, 데이터 수집 알고리즘 제작(front_image, 차량의 현재 상태, segmentation)
+ - 박신영 : 가상 공간 제작, 전반적인 코드 최적화, 데이터 수집 알고리즘 제작(Lidar_sensor_data)
+
+## 🛠 개발 환경
+- python
+- pytorch
+- C#     
+- Unity
+
+## 🏆 경남 SW경진대회에서 대상을 수여하였습니다.🎊🎊
+
+# 🎥지금부터 설명을 시작하겠습니다.
+
+![슬라이드1](https://github.com/gkxotjd12312/unitiy_Genetic_A_Car/assets/54784059/4f064b59-1054-4e33-b1a1-9647dfe1e0ce)
+ - 자율주행 모델을 만들기 위한 
